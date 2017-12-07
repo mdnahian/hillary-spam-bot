@@ -17,7 +17,7 @@ def match_class(target):
 
 
 def execute():
-	with open('hilary.txt', 'a') as hilary_file:
+	with open('hillary.txt', 'a') as hillary_file:
 		for i in range(2, total_emails):
 			raw_html = get_HTML(base_url+str(i))
 			html = BeautifulSoup(raw_html, "html.parser")
@@ -44,7 +44,7 @@ def execute():
 				print('\n\n\n')
 				print(i)
 				print(body)
-				hilary_file.write(body.encode('utf-8')+'\n\n')
+				hillary_file.write(body.encode('utf-8')+'\n\n')
 			else:
 				print('Too Large')
 				print(len(body))

@@ -2,10 +2,10 @@ import numpy as np, tflearn, sys, tensorflow as tf
 from tensorflow.contrib.keras.python.keras.utils import np_utils
 import sys
 
-filename = 'hilary'
+filename = 'hillary'
 
 def build_model():
-	input = open("hilary.txt").read().lower()
+	input = open("hillary.txt").read().lower()
 	chars = sorted(list(set(input)))
 
 	charint = dict((char,ints) for ints, char in enumerate(chars))
